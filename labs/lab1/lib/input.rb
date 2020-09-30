@@ -2,7 +2,7 @@ class Input
   def self.input_number
     inpt = 0
     loop do
-      print 'Введите число с плавающей запятой: '
+      print 'Enter a floating point number: '
       inpt = $stdin.gets.strip
       break if inpt.to_f.to_s == inpt
     end
@@ -12,7 +12,7 @@ class Input
   def self.input_scale
     inpt = ''
     loop do
-      print 'Введите название шкалы C, K, или F: '
+      print 'Enter the name of the scale C, K, или F: '
       inpt = $stdin.gets.strip
       break if %w[C K F].include? inpt
     end

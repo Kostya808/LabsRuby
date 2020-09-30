@@ -5,7 +5,7 @@ class Main
   def self.main
     number = Input.input_number
     old_scale = Input.input_scale
-    puts "\nНазвание шкалы, в которую нужно перевести:"
+    puts "\nThe name of the scale to be translated:"
     new_scale = Input.input_scale
 
     result = Calculate.scale_conversion(number, old_scale, new_scale)
