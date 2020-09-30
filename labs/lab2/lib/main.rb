@@ -31,13 +31,13 @@ class MainClass
   def self.input_choice
     choice = ''
 
-    puts '1. Максимум'
-    puts '2. Минимум'
-    puts '3. Среднее значение'
-    puts '4. Исправленную выборочную дисперсию'
+    puts '1. Maximum'
+    puts '2. Minimum'
+    puts '3. Mean'
+    puts '4. Corrected sample variance'
 
     loop do
-      print 'Введите число от 1 до 4: '
+      print 'Insert the number from 1 to 4: '
       choice = $stdin.gets.to_i
       break if choice >= 1 && choice <= 4
     end
