@@ -21,11 +21,7 @@ class MainClass
     f = File.new('stat.csv', 'r:UTF-8')
     lines = f.readlines
     lines.shift(2)
-
-    (0..lines.length - 1).each do |i|
-      lines[i] = lines[i].sub(/,\d+,/, ',')
-    end
-    lines
+    lines.map! { |line| line.sub(/,\d+,/, ',') }
   end
 
   def self.input_choice
